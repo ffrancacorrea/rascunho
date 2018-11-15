@@ -1,0 +1,97 @@
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0); }
+  40% {
+    transform: translateY(-7px); }
+  60% {
+    transform: translateY(-4px); } }
+
+@keyframes jello {
+  11.1% {
+    transform: none; }
+  22.2% {
+    transform: skewX(-12.5deg) skewY(-12.5deg); }
+  33.3% {
+    transform: skewX(6.25deg) skewY(6.25deg); }
+  44.4% {
+    transform: skewX(-3.125deg) skewY(-3.125deg); }
+  55.5% {
+    transform: skewX(1.5625deg) skewY(1.5625deg); }
+  66.6% {
+    transform: skewX(-0.78125deg) skewY(-0.78125deg); }
+  77.7% {
+    transform: skewX(0.39063deg) skewY(0.39063deg); }
+  88.8% {
+    transform: skewX(-0.19531deg) skewY(-0.19531deg); }
+  100% {
+    transform: none; } }
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden; }
+
+body {
+  font-family: 'Handlee', cursive !important;
+  overflow-x: hidden;
+  background-color: black !important;
+  text-align: center !important;
+  color: white !important; }
+
+.navbar {
+  color: white !important;
+  background-color: #6CB4C5 !important;
+  color: white !important; }
+
+.nav-item:hover {
+  transform: scale(1.2); }
+
+@media only screen and (max-width: 600px) {
+  .meet-the-artist {
+    width: 50%; } }
+
+h1 {
+  font-weight: bold !important;
+  margin: 0% !important;
+  padding: 3.5% !important; }
+
+.col-md-12 {
+  padding-top: 20px; }
+
+.img-thumbnail {
+  transition: 1s; }
+  .img-thumbnail:hover {
+    opacity: .6;
+    transform: scale(1.05); }
+
+.arrow {
+  text-align: center;
+  margin: 1% 0; }
+  .arrow__bounce {
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite; }
+
+button {
+  font-size: 25px !important;
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 15px !important;
+  padding: 0.7%;
+  transition: 0.6s !important; }
+  button:hover {
+    background-color: #6CB4C5 !important; }
+
+.carousel {
+  margin: 1% 0 3% 0;
+  background-color: #6CB4C5 !important; }
+
+.more {
+  padding: 25px; }
+
+.jello:hover {
+  animation: jello 1.5s infinite alternate ease-in-out;
+  transform-origin: center; }
+
+.center:hover {
+  display: inline-block; }
